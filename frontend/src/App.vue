@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <button v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)">
+      <div id="flags"><button v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)">
         <flag :iso="entry.flag" v-bind:squared=false /> <!--{{entry.title}}-->
-      </button>
-      <router-link to="/">{{ $t('home') }}</router-link>
-      <router-link to="/about" >About</router-link>
-
+      </button></div>
+      <div id="nav-a"><router-link to="/">{{ $t('home') }}</router-link>
+      <router-link to="/about" >About</router-link></div>
+      <div id="hamburger">
+        <button><img src="./assets/burg.png" width="30"  height="30" alt=""></button>
+      </div>
       <!--<select v-model="selected">
         <option disabled value="">Ukrainian</option>
         <option v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"><flag :iso="entry.flag" v-bind:squared=false /> {{entry.title}}</option>
@@ -53,34 +55,46 @@ export default {
 }
 
 #nav {
-  padding: 10px;
+  padding: 5px;
   border-style: solid;
   border-color: red;
   display: flex;
-  flex-direction: row;
-
+  justify-content: space-between;
 }
 
 #nav a {
   font-weight: bold;
   color: green;
-  padding: 2rem;
-
+  padding: 2rem  0;
+  text-decoration: blink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+#nav a:hover{
+  color: #0074D9;
+}
   body{
     margin: 0px;
   }
 button {
-  padding: 15px;
-  border: 1px solid green;
+  padding: 10px;
+  /*border: 1px solid green;*/
   font-size: 18px;
-  margin: 15px;
+  margin: 10px;
+}
+#flags{
+  margin-left: 5px;
 }
   div {
     border: 2px solid red;
   }
+  #hamburger{
+    display: none;
+  }
+
 </style>
