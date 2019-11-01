@@ -5,17 +5,13 @@
         <flag :iso="entry.flag" v-bind:squared=false /> <!--{{entry.title}}-->
       </button></div>
       <div id="nav-a"><router-link to="/">{{ $t('home') }}</router-link>
-      <router-link to="/about" >About</router-link></div>
+      <router-link to="/about" >{{ $t('about') }}</router-link></div>
       <div id="hamburger">
-        <button><img src="./assets/burg.png" width="30"  height="30" alt=""></button>
+        <button @click="hamburger"><img src="./assets/burg.png" width="30"  height="30" alt=""></button>
       </div>
-      <!--<select v-model="selected">
-        <option disabled value="">Ukrainian</option>
-        <option v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"><flag :iso="entry.flag" v-bind:squared=false /> {{entry.title}}</option>
-        <option></option>
-      </select>-->
-
     </div>
+    <div id="nav-small" v-bind:style="styleObject"><router-link to="/">{{ $t('home') }}</router-link>
+      <router-link to="/about" >{{ $t('about') }}</router-link></div>
     <router-view/>
   </div>
 </template>
@@ -34,12 +30,21 @@ export default {
         { flag: 'ua', language: 'ua', title: 'Ukrainian' },
         { flag: 'ru', language: 'ru', title: 'Russian' }
       ],
-      selected: ''
+      styleObject: {
+        display: 'none'
+      }
     }
   },
   methods: {
     changeLocale (locale) {
       i18n.locale = locale
+    },
+    hamburger: function () {
+      if (this.styleObject.display === 'none') {
+        this.styleObject.display = 'flex'
+      } else {
+        this.styleObject.display = 'none'
+      }
     }
   }
 }
@@ -62,20 +67,40 @@ export default {
   justify-content: space-between;
 }
 
-#nav a {
+ a {
   font-weight: bold;
   color: green;
-  padding: 2rem  0;
+  padding: 1.5rem  0;
   text-decoration: blink;
+   border: 1px solid grey;
+}
+#nav-a{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 60%;
+}
+#hamburger{
+  display: none;
+}
+@media all and (max-width: 800px) {
+  #nav-a { display: none;}
+  #hamburger{
+    display: block;
+  }
+  #nav-small{
+    display: flex;
+    flex-direction: column;
+  }
+  a{
+    padding: 1rem 0;
+  }
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-#nav a:hover{
+a:hover{
   color: #0074D9;
 }
   body{
@@ -86,6 +111,7 @@ button {
   /*border: 1px solid green;*/
   font-size: 18px;
   margin: 10px;
+  border: none;
 }
 #flags{
   margin-left: 5px;
@@ -93,8 +119,4 @@ button {
   div {
     border: 2px solid red;
   }
-  #hamburger{
-    display: none;
-  }
-
 </style>
