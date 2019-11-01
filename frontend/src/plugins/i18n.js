@@ -7,7 +7,7 @@ const messages = {
   'en': {
     welcomeMsg: 'Welcome to Your Vue.js App',
     home: 'Home',
-    checkout: 'check out the',
+    about: 'About',
     plugins: 'Installed CLI Plugins',
     links: 'Essential Links',
     ecosystem: 'Ecosystem'
@@ -15,13 +15,14 @@ const messages = {
   'ua': {
     welcomeMsg: 'Доброго ранку',
     home: 'Головна',
-    checkout: 'revisar la',
+    about: 'О нас',
     plugins: 'Plugins de CLI instalados',
     links: 'Enlaces esenciales',
     ecosystem: 'Ecosistema'
   },
   'ru': {
-    home: 'Главная'
+    home: 'Главная',
+    about: 'О нас'
   }
 }
 
