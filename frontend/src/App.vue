@@ -2,16 +2,22 @@
   <div id="app">
     <div id="nav">
       <div id="flags"><button v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)">
-        <flag :iso="entry.flag" v-bind:squared=false /> <!--{{entry.title}}-->
+        <flag :iso="entry.flag" v-bind:squared=false />
       </button></div>
       <div id="nav-a"><router-link to="/">{{ $t('home') }}</router-link>
-      <router-link to="/about" >{{ $t('about') }}</router-link></div>
+      <router-link to="/about" >{{ $t('about') }}</router-link>
+        <router-link to="/signUp">{{ $t('signUp') }}</router-link>
+        <router-link to="/signIn">{{ $t('signIn') }}</router-link>
+      </div>
       <div id="hamburger">
         <button @click="hamburger"><img src="./assets/burg.png" width="30"  height="30" alt=""></button>
       </div>
     </div>
     <div id="nav-small" v-bind:style="styleObject"><router-link to="/">{{ $t('home') }}</router-link>
-      <router-link to="/about" >{{ $t('about') }}</router-link></div>
+      <router-link to="/about" >{{ $t('about') }}</router-link>
+      <router-link to="/signUp">{{ $t('signUp') }}</router-link>
+      <router-link to="/signIn">{{ $t('signIn') }}</router-link>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -65,11 +71,12 @@ export default {
   border-color: red;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(39, 129, 217, 0.31);
 }
 
  a {
   font-weight: bold;
-  color: green;
+  color: #42b983;
   padding: 1.5rem  0;
   text-decoration: blink;
    border: 1px solid grey;
@@ -77,7 +84,7 @@ export default {
 #nav-a{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 60%;
 }
 #hamburger{
