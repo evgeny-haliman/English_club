@@ -10,7 +10,9 @@ const messages = {
     about: 'Direction',
     signUp: 'Sign up',
     signIn: 'Sign in',
-    ecosystem: 'Ecosystem'
+    h1: 'Getting started in a foreign language hasn’t been so easy',
+    h2: 'It can be done here and now'
+
   },
   'ua': {
     welcomeMsg: 'Доброго ранку',
@@ -18,13 +20,16 @@ const messages = {
     about: 'Посібник',
     signUp: 'Реєстрація',
     signIn: 'Увійти',
-    ecosystem: 'Ecosistema'
+    h1: 'Почати спілкуватися на іноземній мові ще не було так просто',
+    h2: 'Це можно зробити просто зараз'
   },
   'ru': {
     home: 'Главная',
     about: 'Пособие',
     signUp: 'Регистрация',
-    signIn: 'Войти'
+    signIn: 'Войти',
+    h1: 'Начать общаться на иностранном языке еще не было так просто ',
+    h2: 'Это можно сделать здесь и сейчас'
   }
 }
 
