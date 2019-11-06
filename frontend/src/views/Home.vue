@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <div class="header"><h1>Начать общаться на иностранном языке еще не было так просто </h1>
-    <h2>Это можно сделать здесь и сейчас</h2></div>
-    <div class="main"><div style="flex-basis:50%; flex-grow:0; flex-shrink:0;"><h3>Почему это важно</h3>
+    <br>
+    <div class="header"><h1>{{ $t('h1') }}</h1>
+    <h2>{{ $t('h2') }}</h2></div>
+    <br>
+    <div class="main"><div style="flex-basis:40%; flex-grow:0; flex-shrink:0;"><h3>Почему это важно</h3>
     <p>В любом деле нужна практика. А в изучении языка помимо теории огромную роль играет возможность применить свои знания
-      во время разговора с другим человеком.
+      во время разговора с другим человеком. На прогулке или дома, на работе или в дороге - всегда найдется время для занятия любимым делом!
     </p></div>
-      <div></div>
+      <div style="flex-basis:40%; flex-grow:0; flex-shrink:0;"></div>
     </div>
   </div>
 </template>
@@ -31,7 +33,8 @@ export default {
   .main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: large;
   }
   @media all and (max-width: 800px){
     .main{
