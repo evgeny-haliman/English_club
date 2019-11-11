@@ -6,7 +6,7 @@
       </button></div>
       <div id="nav-a"><router-link to="/">{{ $t('home') }}</router-link>
       <router-link to="/about" >{{ $t('about') }}</router-link>
-        <router-link to="/signUp">{{ $t('signUp') }}</router-link>
+        <router-link to="/contacts">{{ $t('contacts') }}</router-link>
         <router-link to="/signIn">{{ $t('signIn') }}</router-link>
       </div>
       <div id="hamburger">
@@ -15,7 +15,7 @@
     </div>
     <div id="nav-small" v-bind:style="styleObject"><router-link to="/">{{ $t('home') }}</router-link>
       <router-link to="/about" >{{ $t('about') }}</router-link>
-      <router-link to="/signUp">{{ $t('signUp') }}</router-link>
+      <router-link to="/contacts">{{ $t('contacts') }}</router-link>
       <router-link to="/signIn">{{ $t('signIn') }}</router-link>
     </div>
     <router-view/>

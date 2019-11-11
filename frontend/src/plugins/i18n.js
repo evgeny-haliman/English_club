@@ -20,7 +20,8 @@ const messages = {
     whatNeedText: 'For a conversation, a regular computer is also suitable, of course, with a microphone. A smartphone or ' +
       'tablet is even better, because we use them most often for calls. Well, the presence of your favorite application, with ' +
       'the help of which you will increase the level of your knowledge of a foreign language. After registration, you can call ' +
-      'other participants or standby.'
+      'other participants or standby.',
+    contacts: 'Contacts'
   },
   'ua': {
     welcomeMsg: 'Доброго ранку',
@@ -38,7 +39,8 @@ const messages = {
     whatNeedText: 'Для проведення розмови згодиться і звичайний компʼютер, авжеж, за наявності мікрофону. Смартфон або ' +
       'планшет - ще краще, адже саме їх ми частіше за всього використовуємо для дзвінків. Ну і наявність улюбленої ' +
       'програми , за допомогою якої ви і будете підвищувати свій рівень володіння іноземною мовою. Після регістрації ви зможете ' +
-      'дзвонити іншим учасникам або стати у режим очікування.'
+      'дзвонити іншим учасникам або стати у режим очікування.',
+    contacts: 'Контакти'
   },
   'ru': {
     home: 'Главная',
@@ -55,7 +57,8 @@ const messages = {
     whatNeedText: 'Для проведения разговора подойдет и обычный компьютер, конечно же, при наличии микрофона. Смартфон или ' +
       'планшет - ещё лучше, ведь именно их мы чаще всего используем для звонков. Ну и наличие любимого приложения, с помощью ' +
       'которого вы и будете повышать уровень своего владения иностранным языком. После регистрации вы сможете позвонить ' +
-      'другим участникам или стать в режим ожидания.'
+      'другим участникам или стать в режим ожидания.',
+    contacts: 'Контакты'
   }
 }
 
