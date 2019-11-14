@@ -6,9 +6,9 @@
     <br>
     <div class="main"><div style="flex-basis:40%; flex-grow:0; flex-shrink:0;"><h3>{{$t('whyImportant')}}</h3><img src="../assets/headphone.png"
                                                                                                              alt="Headphone">
-    <p>{{$t(('whyImportantText'))}}</p></div>
+      <p><b>{{$t(('whyImportantText'))}}</b></p></div>
       <div style="flex-basis:40%; flex-grow:0; flex-shrink:0;"><h3>{{$t('whatNeed')}}</h3><img src="../assets/viber.png" alt="viber">
-      <p>{{$t(('whatNeedText'))}}</p></div>
+        <p><b>{{$t(('whatNeedText'))}}</b></p></div>
     </div>
   </div>
 </template>
