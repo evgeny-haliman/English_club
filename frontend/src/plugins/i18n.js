@@ -21,7 +21,10 @@ const messages = {
       'tablet is even better, because we use them most often for calls. Well, the presence of your favorite application, with ' +
       'the help of which you will increase the level of your knowledge of a foreign language. After registration, you can call ' +
       'other participants or standby.',
-    contacts: 'Contacts'
+    contacts: 'Contacts',
+    login: 'Login',
+    viaMail: 'Via email',
+    otherLogin: 'Other login methods'
   },
   'ua': {
     welcomeMsg: 'Доброго ранку',
@@ -40,7 +43,10 @@ const messages = {
       'планшет - ще краще, адже саме їх ми частіше за всього використовуємо для дзвінків. Ну і наявність улюбленої ' +
       'програми , за допомогою якої ви і будете підвищувати свій рівень володіння іноземною мовою. Після регістрації ви зможете ' +
       'дзвонити іншим учасникам або стати у режим очікування.',
-    contacts: 'Контакти'
+    contacts: 'Контакти',
+    login: 'Вхід',
+    viaMail: 'За допомогою пошти',
+    otherLogin: 'Інші способи входу'
   },
   'ru': {
     home: 'Главная',
@@ -58,7 +64,10 @@ const messages = {
       'планшет - ещё лучше, ведь именно их мы чаще всего используем для звонков. Ну и наличие любимого приложения, с помощью ' +
       'которого вы и будете повышать уровень своего владения иностранным языком. После регистрации вы сможете позвонить ' +
       'другим участникам или стать в режим ожидания.',
-    contacts: 'Контакты'
+    contacts: 'Контакты',
+    login: 'Вход',
+    viaMail: 'С помощью почты',
+    otherLogin: 'Другие способы входа'
   }
 }
 
