@@ -24,7 +24,8 @@ const messages = {
     contacts: 'Contacts',
     login: 'Login',
     viaMail: 'Via email',
-    otherLogin: 'Other login methods'
+    otherLogin: 'Other login methods',
+    email: 'email'
   },
   'ua': {
     welcomeMsg: 'Доброго ранку',
@@ -46,7 +47,8 @@ const messages = {
     contacts: 'Контакти',
     login: 'Вхід',
     viaMail: 'За допомогою пошти',
-    otherLogin: 'Інші способи входу'
+    otherLogin: 'Інші способи входу',
+    email: 'Пошта'
   },
   'ru': {
     home: 'Главная',
@@ -67,7 +69,8 @@ const messages = {
     contacts: 'Контакты',
     login: 'Вход',
     viaMail: 'С помощью почты',
-    otherLogin: 'Другие способы входа'
+    otherLogin: 'Другие способы входа',
+    email: 'Почта'
   }
 }
 
