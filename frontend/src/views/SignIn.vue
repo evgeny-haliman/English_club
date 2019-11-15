@@ -7,6 +7,7 @@
         <div class="imgcontainer">
           <img src="../assets/login.png" alt="Avatar" class="avatar" width="60">
         </div>
+        <input type="email" required :placeholder="`${email}`">
       </form>
     </div>
     <div class="google" style="flex: 0 1 40vw"><br><br>
